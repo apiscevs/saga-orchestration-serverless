@@ -160,7 +160,7 @@ resource "azurerm_cosmosdb_account" "sagalogic-db-account" {
   }
   
   timeouts = {
-	create = 5
+    create = 5
   }
 }
 
