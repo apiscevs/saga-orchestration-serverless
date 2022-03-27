@@ -158,10 +158,6 @@ resource "azurerm_cosmosdb_account" "sagalogic-db-account" {
   tags = {
     environment = var.environment
   }
-  
-  timeouts = {
-    create = 5
-  }
 }
 
 resource "azurerm_cosmosdb_sql_database" "sagalogic-sql-database" {
