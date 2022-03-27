@@ -1,7 +1,7 @@
 resource "azurerm_resource_group" "sagalogic-resource-group" {
   name     = "${var.prefix}-resources"
   location = var.location
- 
+
   tags = {
     environment = var.environment
   }
