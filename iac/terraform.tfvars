@@ -1,5 +1,5 @@
 #this is a file with recommended variable names
-prefix          = "test"
+prefix          = "sagaplayground"
 environment     = "dev"
 location        = "westeurope"
 partition_count = "2"
