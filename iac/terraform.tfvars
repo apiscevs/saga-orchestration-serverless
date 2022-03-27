@@ -7,3 +7,4 @@ partition_count = "2"
 failover_location    = "easteurope"
 storage_account_name = "sagaorcsa"
 azure_function_app   = "aminazure-functions"
+
