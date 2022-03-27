@@ -94,10 +94,7 @@ resource "azurerm_function_app" "sagalogic-function" {
     "CosmosDbSagaCollectionName"         = azurerm_cosmosdb_sql_container.sagalogic-sql-container["saga"].name,
 
     "EventHubsNamespaceConnection" = azurerm_eventhub_namespace.sagalogic-namespace.default_primary_connection_string,
-    "ValidatorEventHubName"        = azurerm_eventhub.sagalogic-eventhub["validator"].name,
-    "ReceiptEventHubName"          = azurerm_eventhub.sagalogic-eventhub["receipt"].name,
-    "TransferEventHubName"         = azurerm_eventhub.sagalogic-eventhub["transfer"].name,
-    "ReplyEventHubName"            = azurerm_eventhub.sagalogic-eventhub["saga-reply"].name,
+
 
     "EventHubsProducerMaxRetryAttempts" = 3,
     "ActivityMaxRetryAttempts"          = 3,
